@@ -1,14 +1,12 @@
-   <?php
+<?php
 
-   require_once 'Dog.php';
-   require_once 'Cat.php';
+require 'vendor/autoload.php';
 
-   $animals = [
-       new Dog(),
-       new Cat(),
-   ];
+use AnimalProject\Dog;
+use AnimalProject\Cat;
 
-   foreach ($animals as $animal) {
-       echo $animal->getInfo() . PHP_EOL;
-   }
-   
+$dog = new Dog();
+$cat = new Cat();
+
+echo $dog->getInfo() . PHP_EOL;
+echo $cat->getInfo() . PHP_EOL;

@@ -1,14 +1,16 @@
-   <?php
+<?php
 
-   require_once 'Animal.php';
+namespace AnimalProject;
 
-   class Cat extends Animal {
-       public function makeSound(): string {
-           return "Мяу!";
-       }
+class Cat extends Animal
+{
+    public function makeSound(): string
+    {
+        return "Мяу";
+    }
 
-       public function getType(): string {
-           return "Млекопитающее";
-       }
-   }
-   
+    public function getType(): string
+    {
+        return "Млекопитающее";
+    }
+}
